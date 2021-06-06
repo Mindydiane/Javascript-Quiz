@@ -37,7 +37,7 @@ body
     background: #4fee1f;
     color: #a34c12;
 }
-/* Guide Section */
+/* Guide Section
 #guide,#quiz
 {
     height: auto;
@@ -88,7 +88,7 @@ body
 #guide #button button:hover
 {
     background: #e91e3a;
-}
+} */
 #quiz
 {
     display: block;
@@ -114,3 +114,56 @@ body
     margin: 0 20px;
     color: #85c9f7;
 }
+#quiz #quiz_header #timer
+{
+    height: 50px;
+    width: 200px;
+    background: #fa0909;
+    color: #e7f1fa;
+    border: 1px solid #b0c4d8;
+    font-size: 18px;
+    border-radius: 20px 5px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 10px;
+}
+#quiz #quiz_header #timer h6
+{
+    font-size: 22px;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    margin: 0 10px;
+}
+#quiz #quiz_header #timer #time
+{
+    height: 44px;
+    width: 50px;
+    background: #fff;
+    color: #ca6363;
+    border: 1px solid #b0c4d8;
+    border-radius: 15px 7px;
+    margin: 2px 0 0 27px;
+}
+/* Quiz Questions */
+#quiz #question
+{
+    position: absolute;
+    top: 90px;
+    display: flex;
+    flex-direction: row;
+}
+
+#quiz #question:first-child
+{
+    margin: 0 10px 5px;
+}
+#quiz #optionList
+{
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    top: 160px;
+}
+
