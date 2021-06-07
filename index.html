@@ -1,56 +1,53 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS Quiz</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
+
 <body>
-   <div id="container">
-<!-- Start Section -->
-<button id="start">Start Quiz</button>
-
-
-<!-- Guide Section -->
-<!-- <div id="guide">
-    <h2>Quiz Guide</h2>
-    <h4>1. You Have Only 20 Seconds For Each Quesion</h4>
-    <h4>2. Once You Select Your Answer. It Can't Be Undone.</h4>
-    <h4>3. You'll Get Points For Your Correct Answers</h4>
-    <h4>4. After You Start The Quiz, You Can't Exit While You're Playing.</h4> -->
-
-<div id="button">
-    <button id="exit">Exit</button>
-    <button id="continue">Continue</button>
-</div>
-</div>
-
-<!-- Quiz Section -->
-    <div id="quiz">
-        <div id="quiz_header">
-            <h5>Cool JS Quiz</h5>
-            <div id="timer">
-                <h6>Time Left</h6>
-                <h6 id="time">00</h6>
+    <div id="container">
+        <div class="homePage">
+            <!-- Guide Section -->
+            <div id="guide">
+                <h2>Quiz Guide</h2>
+                <h4>1. You Have Only 20 Seconds For Each Quesion</h4>
+                <h4>2. Once You Select Your Answer. It Can’t Be Undone.</h4>
+                <h4>3. You’ll Get Points For Your Correct Answers</h4>
+                <h4>
+                    4. After You Start The Quiz, You Can’t Exit While You’re Playing.
+                </h4>
+                
             </div>
+            <!-- Start Section -->
+            <div id="start">Start Quiz</div>
+        </div>
+        <div class="quizPage hide">
+            <!-- Quiz Section -->
+            <div id="quiz">
+                <div id="quiz_header">
+                    <h5>Cool JS Quiz</h5>
+                    <div id="timer">
+                        <h6>Time Left</h6>
+                        <h6 id="time">00</h6>
+                    </div>
+                </div>
+                
+                <!--  Quiz Choices  -->
+                <div id="optionList"></div>
+                <div class="choice_que" id="option1" class="button"><button>a</button></div>
+                <div class="choice_que" id="option2" class="button"><button>b</button></div>
+                <div class="choice_que" id="option3" class="button"><button>c</button></div>
+            </div>
+            <button class="next">Next</button>
         </div>
     </div>
-<!--  Quiz Questions  -->
-    <div id="question">
-        <div id="questionNo">
-        <div id="questionText"></div>
-        </div>     
-    </div>
-<!--  Quiz Choices  -->
-<div id="optionList"></div>
-<div class="choice_que" id="option1"><div>
-<div class="choice_que" id="option2"></div>
-<div class="choice_que" id="option3"></div>
-<div class="choice_que" id="option4"></div>
-   </div> 
-  
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
