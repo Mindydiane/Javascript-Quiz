@@ -23,9 +23,17 @@
     </header>
     
     <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-auto homePage">
+                        <h2 id="quizBox"> JS Quiz Challenge</h2>
+                    </div>
+                </div>    
+        
         <div class="homePage">
             <!-- Guide Section -->
-            <div id="guide">
+            <div id="instructions" class=" row justify-content-md-center guide">
                 <h2>Quiz Guide</h2>
                 <h4>1. Try to answer the following questions within the time limit.</h4>
                 <h4>2. Once You Select Your Answer. It Can’t Be Undone.</h4>
@@ -37,25 +45,21 @@
                 
             </div>
             <!-- Start Section -->
-            <div id="start">Start Quiz</div>
-        </div>
-        <div class="quizPage hide">
-            <!-- Quiz Section -->
-            <div id="quiz">
-                <div id="quiz_header">
-                    <h5>Cool JS Quiz</h5>
-                    
+            <div class="row justify-content-md-center" id="answerBox">
+                <div class="col-md-auto">
+                    <button id="start">Start Quiz</button>
                 </div>
-                
-                <!--  Quiz Choices  -->
-                <div id="optionList"></div>
-                <div class="choice_que" id="option1" class="button"><button>a</button></div>
-                <div class="choice_que" id="option2" class="button"><button>b</button></div>
-                <div class="choice_que" id="option3" class="button"><button>c</button></div>
             </div>
-            <button class="next">Next</button>
-        </div>
+        </div> 
     </div>
+        <div class="row quizPage hide">
+            <!-- Quiz Section -->
+            <div class="col" id="correctBox">
+                    <h5>Cool JS Quiz</h5>                   
+                </div>
+            </div>
+        </div>        
+                
     <script src="./assets/js/script.js"></script>
 </body>
 
