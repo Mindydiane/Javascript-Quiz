@@ -1,23 +1,15 @@
-//stored variables from html id
-// var quizContainer = document.getElementById('quiz');
-// var resultsContainer = document.getElementById('results');
-// var submitButton = document.getElementById('submit');
-
-//start section
+//quiz variables
 var start = document.querySelector('#start');
 var homePage = document.querySelector('.homePage');
-
-//quiz section
-// var countDown = document.querySelector('#timer');
+var answerBox = document.querySelector('#answerBox');
+var instructions = document.querySelector('#instructions');
+var correctBox = document.querySelector('#correctBox')
+var countDown = 60;
 var quizPage = document.querySelector('.quizPage');
-var questionHeader = document.querySelector('#optionList');
-var questionOne = document.querySelector('#option1');
-var questionTwo = document.querySelector('#option2');
-var questionThree = document.querySelector('#option3');
 
 var index = 0;
 
-var myQuestions = [
+var quizQuestions = [
   
 
   {
@@ -53,10 +45,10 @@ var myQuestions = [
 // console.log(myQuestions);
 
 function showQuestion() {
-  questionHeader.innerHTML = myQuestions[index].question;
-  questionOne.innerHTML = myQuestions[index].answers.a;
-  questionTwo.innerHTML = myQuestions[index].answers.b;
-  questionThree.innerHTML = myQuestions[index].answers.c;
+  questionHeader.innerHTML = quizQuestions[index].question;
+  questionOne.innerHTML = quizQuestions[index].answers.a;
+  questionTwo.innerHTML = quizQuestions[index].answers.b;
+  questionThree.innerHTML = quizQuestions[index].answers.c;
 
 }
 
