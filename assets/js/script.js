@@ -8,7 +8,7 @@ var start = document.querySelector('#start');
 var homePage = document.querySelector('.homePage');
 
 //quiz section
-// var time = document.querySelector('#time');
+// var countDown = document.querySelector('#timer');
 var quizPage = document.querySelector('.quizPage');
 var questionHeader = document.querySelector('#optionList');
 var questionOne = document.querySelector('#option1');
